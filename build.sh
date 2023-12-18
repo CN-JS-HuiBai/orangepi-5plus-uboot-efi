@@ -1,4 +1,5 @@
 #!/bin/bash
+apt install -y gcc-aarch64-linux-gnu swig python3-pyelftools
 make mrproper
 cp --recursive rkbin /tmp 
 export ROCKCHIP_TPL=/tmp/rkbin/rk35/rk3588_ddr_lp4_2112MHz_lp5_2736MHz_v1.12.bin

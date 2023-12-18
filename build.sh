@@ -1,6 +1,6 @@
 #!/bin/bash
 apt update
-apt install -y gcc-aarch64-linux-gnu swig python3-pyelftools make gcc cpp libncurses-dev 
+apt install -y gcc-aarch64-linux-gnu swig python3-pyelftools make gcc cpp libncurses-dev python-pip
 apt install -y git fakeroot libncurses-dev zstd dracut bc flex bison dwarves
 make mrproper
 cp --recursive rkbin /tmp 

@@ -1,5 +1,7 @@
 #!/bin/bash
-apt install -y gcc-aarch64-linux-gnu swig python3-pyelftools
+apt update
+apt install -y gcc-aarch64-linux-gnu swig python3-pyelftools make gcc cpp libncurses-dev 
+apt install -y git fakeroot libncurses-dev zstd dracut bc flex bison dwarves
 make mrproper
 cp --recursive rkbin /tmp 
 export ROCKCHIP_TPL=/tmp/rkbin/rk35/rk3588_ddr_lp4_2112MHz_lp5_2736MHz_v1.12.bin
